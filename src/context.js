@@ -33,9 +33,9 @@ class RoomProvider extends Component {
         try {
             let response = await Client.getEntries({
                 content_type: "beachResortRoom",
-                //order: "sys.createdAt"
+                order: "sys.createdAt"
                 //order: "fields.price"
-                order: "-fields.price" // reverse order use - sign
+                //order: "-fields.price" // reverse order use - sign
             })
 
             console.log(response.items)
